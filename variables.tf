@@ -1,4 +1,4 @@
-variable "environment_name" {
+variable "name" {
   type = string
 }
 
@@ -6,13 +6,8 @@ variable "project" {
   type = string
 }
 
-variable "name" {
-  type = string
-}
-
 variable "region" {
-  type    = string
-  default = "europe-west4"
+  type = string
 }
 
 variable "network" {
@@ -20,7 +15,8 @@ variable "network" {
 }
 
 variable "instances" {
-  type = list(string)
+  type    = list(string)
+  default = null
 }
 
 variable "load_balancing_scheme" {
