@@ -15,7 +15,7 @@ resource "google_compute_target_pool" "main" {
   instances        = var.instances
 
   health_checks = [
-    google_compute_http_health_check.main.name,
+    google_compute_http_health_check.main.name
   ]
 }
 

@@ -1,5 +1,5 @@
-output "self_link" {
-  value = google_compute_firewall.main.self_link
+output "target_pool_self_link" {
+  value = google_compute_target_pool.main.self_link
 }
 
 output "public_ip" {
